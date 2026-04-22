@@ -1,0 +1,75 @@
+[2026-04-22T07:06:15Z] === ENRICH ITERATION 1 START | repo=apple/embedding-atlas sha=5938e875 ===
+[2026-04-22T07:06:15Z] [iter=1] PHASE START: enrich repo=apple/embedding-atlas sha=5938e875 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5938e875-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5938e875890b49a432648426db4e97ba977f0b67.nq.gz
+[2026-04-22T07:06:18Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T07:06:27Z] [iter=1] AST store loaded triples=1295090 load_secs=9 mem_mb=950 MB
+[2026-04-22T07:06:27Z] [iter=1] Step 2: Finding LSP targets mem_mb=950 MB
+[2026-04-22T07:06:29Z] [iter=1] LSP targets found call_sites=9425 imports=692 extends=10 implements=12 secs=1
+[2026-04-22T07:06:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=950 MB
+[2026-04-22T07:06:36Z] [iter=1] Position index built positions=85821 nodes_with_types=102980 secs=6 mem_mb=950 MB
+[2026-04-22T07:06:36Z] [iter=1] Step 3: Starting LSP resolution mem_mb=950 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T07:06:36Z] [iter=1] Resolving target type target_type=call_site count=9425
+[2026-04-22T07:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=30 resolved=2 errors=122 current=packages/docs/.vitepress/doc_ts_interface.mjs
+[2026-04-22T07:08:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=32 resolved=7 errors=201 current=packages/utils/test/merge_updates.test.js
+[2026-04-22T07:10:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=33 resolved=13 errors=378 current=packages/utils/test/equals.test.js
+[2026-04-22T07:11:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=34 resolved=13 errors=558 current=packages/utils/test/debounce.test.js
+[2026-04-22T07:13:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=35 resolved=13 errors=693 current=packages/umap/umap-wasm/tests/umap.test.js
+[2026-04-22T07:14:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=36 resolved=14 errors=823 current=packages/docs/.vitepress/utils.mjs
+[2026-04-22T07:15:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=38 resolved=14 errors=967 current=packages/docs/.vitepress/doc_python_cli.mjs
+[2026-04-22T07:16:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=43 resolved=17 errors=1024 current=packages/docs/examples/utils.js
+[2026-04-22T07:16:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=49 resolved=22 errors=1081 current=packages/utils/vite/index.js
+[2026-04-22T07:17:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=61 resolved=60 errors=1140 current=packages/backend/tests/test_cache.py
+[2026-04-22T07:17:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=62 resolved=77 errors=1211 current=packages/backend/embedding_atlas/cli.py
+[2026-04-22T07:18:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=64 resolved=161 errors=1265 current=packages/umap/benchmark/umap/run_all.py
+[2026-04-22T07:19:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=66 resolved=264 errors=1365 current=packages/umap/benchmark/umap/run_5x_comparison.py
+[2026-04-22T07:20:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=68 resolved=383 errors=1453 current=packages/umap/benchmark/umap/plot_results.py
+[2026-04-22T07:20:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=70 resolved=483 errors=1510 current=packages/backend/embedding_atlas/options.py
+[2026-04-22T07:21:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.1 files_done=72 resolved=510 errors=1574 current=packages/backend/embedding_atlas/projection.py
+[2026-04-22T07:22:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=75 resolved=633 errors=1712 current=packages/umap/benchmark/nndescent/run_all.py
+[2026-04-22T07:23:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=77 resolved=751 errors=1778 current=packages/backend/embedding_atlas/widget.py
+[2026-04-22T07:23:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.6 files_done=81 resolved=812 errors=1843 current=packages/umap/benchmark/nndescent/generate_data.py
+[2026-04-22T07:26:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.0 files_done=83 resolved=882 errors=1884 current=packages/backend/tests/test_modality_detection.py
+[2026-04-22T07:26:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=84 resolved=929 errors=1949 current=packages/umap/benchmark/nndescent/plot_results.py
+[2026-04-22T07:27:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=89 resolved=1020 errors=2002 current=packages/backend/tests/conftest.py
+[2026-04-22T07:28:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=92 resolved=1031 errors=2109 current=packages/examples/src/sample_datasets.ts
+[2026-04-22T07:29:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=94 resolved=1056 errors=2262 current=packages/viewer/src/charts/common/ticks.ts
+[2026-04-22T07:30:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.0 files_done=95 resolved=1066 errors=2322 current=packages/density-clustering/test/clustering.test.ts
+[2026-04-22T07:31:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=96 resolved=1086 errors=2460 current=packages/viewer/src/charts/default_charts.ts
+[2026-04-22T07:32:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=99 resolved=1089 errors=2533 current=packages/viewer/src/charts/embedding/category_column.ts
+[2026-04-22T07:33:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=100 resolved=1096 errors=2657 current=packages/component/src/demo/sample_datasets.ts
+[2026-04-22T07:34:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=103 resolved=1122 errors=2757 current=packages/viewer/src/charts/spec/runtime.ts
+[2026-04-22T07:35:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=104 resolved=1172 errors=2931 current=packages/component/src/lib/embedding_view/mosaic_client.ts
+[2026-04-22T07:37:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=105 resolved=1177 errors=3071 current=packages/component/src/lib/webgpu_renderer/renderer.ts
+[2026-04-22T07:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.8 files_done=106 resolved=1182 errors=3182 current=packages/viewer/src/layouts/dashboard/occupancy_map.ts
+[2026-04-22T07:39:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.7 files_done=109 resolved=1186 errors=3289 current=packages/component/src/lib/webgl2_renderer/disc_blur.ts
+[2026-04-22T07:39:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.4 files_done=111 resolved=1197 errors=3357 current=packages/viewer/src/charts/common/formatter.ts
+[2026-04-22T07:40:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.2 files_done=113 resolved=1220 errors=3447 current=packages/component/src/lib/webgpu_renderer/uniforms.ts
+[2026-04-22T07:41:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.8 files_done=116 resolved=1226 errors=3517 current=packages/viewer/src/utils/screenshot.ts
+[2026-04-22T07:42:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.2 files_done=118 resolved=1276 errors=3672 current=packages/component/src/lib/utils.ts
+[2026-04-22T07:43:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=121 resolved=1313 errors=3749 current=packages/viewer/src/utils/query_payload.ts
+[2026-04-22T07:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.0 files_done=123 resolved=1331 errors=3871 current=packages/component/src/lib/webgl2_renderer/fill_count_buffer.ts
+[2026-04-22T07:45:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.4 files_done=125 resolved=1334 errors=4021 current=packages/component/src/lib/text_summarizer/text_summarizer.ts
+[2026-04-22T07:46:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=127 resolved=1344 errors=4100 current=packages/viewer/src/charts/common/theme.ts
+[2026-04-22T07:47:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.8 files_done=132 resolved=1357 errors=4175 current=packages/component/src/lib/webgl2_renderer/paint_contours.ts
+[2026-04-22T07:47:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.3 files_done=135 resolved=1362 errors=4237 current=packages/viewer/src/app/logging.ts
+[2026-04-22T07:48:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.8 files_done=140 resolved=1369 errors=4295 current=packages/component/src/lib/webgl2_renderer/gamma_correction.ts
+[2026-04-22T07:48:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.5 files_done=143 resolved=1372 errors=4371 current=packages/viewer/src/app/backend_data_source.ts
+[2026-04-22T07:49:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.3 files_done=146 resolved=1377 errors=4455 current=packages/utils/src/compression.ts
+[2026-04-22T07:50:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=148 resolved=1382 errors=4511 current=packages/component/src/lib/webgl2_renderer/utils.ts
+[2026-04-22T07:50:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.4 files_done=150 resolved=1384 errors=4573 current=packages/viewer/src/utils/duckdb.ts
+[2026-04-22T07:51:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.9 files_done=155 resolved=1397 errors=4628 current=packages/viewer/src/embedding/embedding.worker.ts
+[2026-04-22T07:51:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.5 files_done=160 resolved=1410 errors=4693 current=packages/component/src/lib/webgl2_renderer/paint_discrete_points.ts
+[2026-04-22T07:52:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.0 files_done=163 resolved=1412 errors=4756 current=packages/viewer/src/utils/html_template.ts
+[2026-04-22T07:52:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=167 resolved=1416 errors=4812 current=packages/examples/src/react/EmbeddingAtlas.tsx
+[2026-04-22T07:53:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.1 files_done=170 resolved=1425 errors=4874 current=packages/docs/examples/examples.data.ts
+[2026-04-22T07:53:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.6 files_done=180 resolved=1435 errors=4928 current=packages/viewer/src/utils/latest_async.ts
+[2026-04-22T07:54:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.1 files_done=194 resolved=1452 errors=4983 current=packages/component/src/lib/embedding_view/worker/worker_functions.ts
+[2026-04-22T07:54:33Z] [iter=1] Target type resolved target_type=call_site resolved=1458 errors=4999 secs=2877 mem_mb=950 MB
+[2026-04-22T07:54:33Z] [iter=1] Resolving target type target_type=import_statement count=692
+[2026-04-22T07:54:47Z] [iter=1] Target type resolved target_type=import_statement resolved=417 errors=0 secs=14 mem_mb=950 MB
+[2026-04-22T07:54:47Z] [iter=1] Resolving target type target_type=extends_clause count=10
+[2026-04-22T07:54:50Z] [iter=1] Target type resolved target_type=extends_clause resolved=10 errors=0 secs=3 mem_mb=950 MB
+[2026-04-22T07:54:50Z] [iter=1] Resolving target type target_type=implements_clause count=12
+[2026-04-22T07:54:52Z] [iter=1] Target type resolved target_type=implements_clause resolved=5 errors=0 secs=2 mem_mb=950 MB
+[2026-04-22T07:55:25Z] [iter=1] Step 5: Writing final enrichment file triples=91909
+[2026-04-22T07:55:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/5938e875890b49a432648426db4e97ba977f0b67.nq.gz size_kb=2175
+[2026-04-22T07:55:27Z] [iter=1] PHASE END: enrich elapsed_s=2952 elapsed_min=49.2 total_triples=91909
